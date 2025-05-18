@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
+    color: #1a1a1a;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.sidebar-header h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.documents-list {
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.document-item {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.document-item:hover {
+    background-color: #e9ecef;
+}
+
+.document-item.active {
+    background-color: #e2e8f0;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+.toolbar {
+    padding: 0.75rem;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+}
+
+.formatting-tools {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.formatting-tools button {
+    padding: 0.5rem;
+    min-width: 2rem;
+    border: 1px solid #dee2e6;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.formatting-tools button:hover {
+    background: #f1f3f5;
+}
+
+.collaborators {
+    padding: 0.5rem;
+    background: #e9ecef;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.editor-container {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.document-title {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+.document-title:focus {
+    border-bottom-color: #4dabf7;
+}
+
+.editor {
+    min-height: 500px;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    outline: none;
+}
+
+.editor:focus {
+    border-color: #4dabf7;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background: #228be6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background: #1c7ed6;
+}
+
+/* Cursor styles */
+.remote-cursor {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.cursor-label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background: inherit;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: white;
+    white-space: nowrap;
+}
