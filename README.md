@@ -17,4 +17,5 @@ Deliverables:
 Working collaborative editor (deployed)
 GitHub repo with clean, documented code
 Brief technical report on real-time collaboration logic
-
+*OUTPUT*
+![Image](https://github.com/user-attachments/assets/2b341e8e-2a9f-4b5e-a432-ed674121c085)
